@@ -1,0 +1,26 @@
+{
+  "name": "lid2",
+  "version": "1.0.0",
+  "description": "Parametric 3D model with a build → screenshot → compare → repeat loop",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "render": "node scripts/render.js",
+    "loop": "npm run build && npm run render && npm run compare",
+    "compare": "node scripts/compare.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamiepearson26-code/Lid2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamiepearson26-code/Lid2/issues"
+  },
+  "homepage": "https://github.com/jamiepearson26-code/Lid2#readme",
+  "dependencies": {
+    "@jscad/modeling": "^2.13.0",
+    "@jscad/stl-serializer": "^2.1.23",
+    "three": "^0.169.0"
+  }
+}
